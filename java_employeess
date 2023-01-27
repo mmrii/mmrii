@@ -1,0 +1,29 @@
+package employeess;
+
+public class Employeess {
+    private String name;
+    private int id,h,m;
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setID(int id){
+        this.id = id;
+    }
+    public void setWorktime(int h,int m){
+        this.h = h;
+        this.m = m;
+    }
+    public String getSalary(){
+        h=m > 30? h+1:h;
+        return "Name:"+name+"\nID:"+id+"\nHour:"+h+"\nsalary:"+h*500;
+    }
+
+    public static void main(String[] args) {
+
+    Employeess e = new Employeess();
+    e.setName("minmarin");
+    e.setID(1005);
+    e.setWorktime(3, 00);
+    System.out.println(e.getSalary());
+        }
+}
